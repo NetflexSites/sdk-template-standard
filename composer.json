@@ -12,7 +12,7 @@
         "php": "^7.3",
         "fideloper/proxy": "^4.0",
         "laravel/tinker": "^2.0",
-        "netflex/sdk": "^2.0.0-RC1",
+        "netflex/sdk": "^2.0.0-RC3",
         "netflex/customers": "^2.0.0-RC1"
     },
     "require-dev": {
