@@ -3,6 +3,19 @@
 
 This is a basic template for creating sites built with Netflex SDK v2
 
+## Setup
+
+To be able to develop locally **ngrok** must be installed and available in your $PATH.
+
+Follow [these instructions](https://ngrok.com/download) to setup **ngrok**.
+
+### Installing dependencies
+
+```bash
+composer install
+yarn
+```
+
 ## Contributing
 
 Thank you for considering contributing to the Netflex Structure! Please read the [contribution guide](CONTRIBUTING.md).
