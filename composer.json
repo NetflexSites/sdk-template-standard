@@ -13,7 +13,8 @@
         "fideloper/proxy": "^4.0",
         "laravel/tinker": "^2.0",
         "netflex/sdk": "^2.0.0-RC3",
-        "netflex/customers": "^2.0.0-RC1"
+        "netflex/customers": "^2.0.0-RC1",
+        "netflex/pages": "^2.0.0-RC2"
     },
     "require-dev": {
         "beyondcode/tinkerwell-helper": "^1.0",
@@ -55,6 +56,11 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:meta"
         ]
     }
 }
