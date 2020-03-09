@@ -1,5 +1,9 @@
 const mix = require('laravel-mix');
 
+require('laravel-mix-eslint')
+require('laravel-mix-polyfill')
+require('laravel-mix-purgecss')
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,5 +15,37 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix
+  .js('resources/js/app.js', 'public/js')
+  .eslint()
+  .sass('resources/sass/app.scss', 'public/css')
+  .polyfill({
+    enabled: true,
+    useBuiltIns: 'usage',
+    targets: false,
+  })
+  .webpackConfig({
+    devServer: {
+      serveIndex: true,
+      before (app, server) {
+        server._watch([
+          'app/**/*.php',
+          'resources/views/**/*.php',
+        ])
+      },
+    },
+  })
+  .extract()
+  .options({
+    processCssUrls: false,
+    postCss: [
+      require('postcss-logical')({ dir: 'ltr' }),
+      require('tailwindcss')(),
+    ],
+  })
+
+if (mix.inProduction()) {
+  mix
+    .purgeCss()
+    .version()
+}
