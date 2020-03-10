@@ -12,11 +12,12 @@
         "php": "^7.3",
         "fideloper/proxy": "^4.0",
         "laravel/tinker": "^2.0",
-        "netflex/sdk": "^2.0.0-RC3",
-        "netflex/customers": "^2.0.0-RC1",
-        "netflex/pages": "^2.0.0-RC2"
+        "netflex/sdk": "^2.0",
+        "netflex/customers": "^2.0",
+        "netflex/pages": "^2.0"
     },
     "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.6",
         "beyondcode/tinkerwell-helper": "^1.0",
         "facade/ignition": "^1.4",
         "fzaninotto/faker": "^1.4",
