@@ -16,6 +16,10 @@ composer install
 yarn
 ```
 
+### VSCode extension
+
+For an improved development experience, please install our [VSCode extension](https://marketplace.visualstudio.com/items?itemName=apility.netflex-vscode)
+
 ## Contributing
 
 Thank you for considering contributing to the Netflex Structure! Please read the [contribution guide](CONTRIBUTING.md).
