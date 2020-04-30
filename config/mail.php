@@ -12,11 +12,11 @@ return [
     | your application here. By default, Laravel is setup for SMTP mail.
     |
     | Supported: "smtp", "sendmail", "mailgun", "ses",
-    |            "postmark", "log", "array", "notifications"
+    |            "postmark", "log", "array", "netflex"
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'notifications'),
+    'driver' => env('MAIL_DRIVER', 'netflex'),
 
     /*
     |--------------------------------------------------------------------------
