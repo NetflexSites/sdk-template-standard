@@ -14,7 +14,8 @@
         "laravel/tinker": "^2.0",
         "netflex/sdk": "^2.0",
         "netflex/customers": "^2.0",
-        "netflex/pages": "^2.0"
+        "netflex/pages": "^2.0",
+        "netflex/notifications": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
