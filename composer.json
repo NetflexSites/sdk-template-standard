@@ -1,7 +1,7 @@
 {
     "name": "netflex/sdk-template-standard",
     "type": "project",
-    "description": "Netflex SDK basic template",
+    "description": "Netflex SDK Standard Template",
     "keywords": [
         "sdk",
         "netflex",
