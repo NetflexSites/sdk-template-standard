@@ -8,22 +8,6 @@ use Netflex\Pages\Providers\RouteServiceProvider as ServiceProvider;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * Define the routes for the application.
-     *
-     * @return void
-     */
-    public function map()
-    {
-        $this->mapApiRoutes();
-        $this->mapNetflexRoutes();
-        $this->mapRedirects();
-        $this->mapWebRoutes();
-        $this->mapRobots();
-        $this->mapSitemap();
-        //
-    }
-
-    /**
      * Define the "web" routes for the application.
      *
      * These routes all receive session state, CSRF protection, etc.
