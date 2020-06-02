@@ -16,7 +16,8 @@
         "netflex/customers": "^2.0",
         "netflex/pages": "^2.0",
         "netflex/notifications": "^2.0",
-        "netflex/scheduler": "^2.0"
+        "netflex/scheduler": "^2.0",
+        "netflex/structure": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.6",
