@@ -1,7 +1,7 @@
 
 <img width="400" src="https://d3lnipq2e3xuc0.cloudfront.net/media/l/800x400/1557406595/banner.png" alt="Banner">
 
-Default template for creating sites built with Netflex SDK v2
+Default template for creating sites built with Netflex SDK v3
 
 ## Setup
 
