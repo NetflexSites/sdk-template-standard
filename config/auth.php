@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'netflex',
-            'model' => App\User::class,
+            'model' => App\Models\User::class,
         ],
 
         // 'users' => [

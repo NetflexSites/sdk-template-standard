@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Netflex\Customers\Customer as Authenticatable;
 use Illuminate\Notifications\Notifiable;
