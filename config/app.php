@@ -107,6 +107,21 @@ return [
     */
 
     'faker_locale' => 'en_US',
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Debug Blackist
+    |--------------------------------------------------------------------------
+    |
+    | Configures what sensitive data should be hidden from the debug screen
+    |
+    */
+    
+    'debug_blacklist' => [
+        '_COOKIE' => array_keys($_COOKIE),
+        '_SERVER' => array_keys($_SERVER),
+        '_ENV' => array_keys($_ENV),        
+    ],
 
     /*
     |--------------------------------------------------------------------------
