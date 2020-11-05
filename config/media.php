@@ -1,6 +1,7 @@
 <?php
 
 use Netflex\Pages\Components\Picture;
+use Netflex\Pages\MediaPreset as Preset;
 
 return [
 
@@ -39,9 +40,6 @@ return [
     |     - fill
     */
     'presets' => [
-        'default' => [
-            'mode' => Picture::MODE_ORIGINAL,
-            'resolutions' => ['1x', '2x'],
-        ]
+        'default' => Preset::ORIGINAL
     ],
 ];
