@@ -13,7 +13,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/tinker": "^2.0",
         "netflex/customers": "^3.0",
-        "netflex/message-channel": "^1.2",
+        "netflex/message-channel": "^1.0",
         "netflex/notifications": "^3.0",
         "netflex/pages": "^3.0",
         "netflex/scheduler": "^3.0",
