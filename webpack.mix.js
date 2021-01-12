@@ -1,8 +1,6 @@
 const mix = require('laravel-mix');
 
-require('laravel-mix-eslint')
-require('laravel-mix-polyfill')
-require('laravel-mix-purgecss')
+require('laravel-mix-polyfill');
 
 /*
  |--------------------------------------------------------------------------
@@ -17,7 +15,6 @@ require('laravel-mix-purgecss')
 
 mix
   .js('resources/js/app.js', 'public/js')
-  .eslint()
   .sass('resources/sass/app.scss', 'public/css')
   .polyfill({
     enabled: true,
@@ -35,17 +32,17 @@ mix
       },
     },
   })
-  .extract()
   .options({
     processCssUrls: false,
     postCss: [
       require('postcss-logical')({ dir: 'ltr' }),
-      require('tailwindcss')(),
     ],
-  })
+  });
 
 if (mix.inProduction()) {
   mix
-    .purgeCss()
-    .version()
+    .version();
+} else {
+  mix
+    .sourceMaps();
 }

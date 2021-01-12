@@ -8,6 +8,7 @@
 /storage/**/*.log
 _ide_helper.php
 .phpstorm.meta.php
+.idea
 /storage/*.key
 /vendor
 .env

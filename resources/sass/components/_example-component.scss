@@ -1,0 +1,10 @@
+
+.example-component {
+  border: 2px solid $dark;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
