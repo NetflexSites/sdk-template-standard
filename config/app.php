@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'nb_NO',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'en_US',
 
     /*
     |--------------------------------------------------------------------------
@@ -107,6 +107,21 @@ return [
     */
 
     'faker_locale' => 'en_US',
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Debug Blackist
+    |--------------------------------------------------------------------------
+    |
+    | Configures what sensitive data should be hidden from the debug screen
+    |
+    */
+    
+    'debug_blacklist' => [
+        '_COOKIE' => array_keys($_COOKIE),
+        '_SERVER' => array_keys($_SERVER),
+        '_ENV' => array_keys($_ENV),        
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -158,7 +173,6 @@ return [
         Illuminate\Redis\RedisServiceProvider::class,
         Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
         Illuminate\Session\SessionServiceProvider::class,
-        Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
@@ -172,7 +186,8 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
     ],
 
     /*

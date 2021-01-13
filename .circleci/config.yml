@@ -26,7 +26,11 @@ jobs:
     docker:
       - image: circleci/node:lts
     steps:
-      - netflex/deploy
+      - netflex/deploy:
+          env:
+            - netflex/env:
+                key: APP_DEBUG
+                value: "true"
 
   deploy_prod:
     docker:
