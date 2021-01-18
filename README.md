@@ -13,7 +13,7 @@ Then, follow these steps:
 
 ## 1. Environment file
 
-Rename `.env.example` to `.env` and fill out these parameters:
+Copy `.env.example`, name it `.env` and fill out these parameters:
 * `NETFLEX_PUBLIC_KEY` (Monitor: Public Key (Content API))
 * `NETFLEX_PRIVATE_KEY` (Monitor: Master Private key (Content API))
 
@@ -35,14 +35,6 @@ yarn build
 ```bash
 php artisan serve
 ```
-
-## 5. CircleCI
-
-Before you can run the site in our online development environment, you need to set the following environment variables in CircleCI:
-* `NETFLEX_PUBLIC_KEY` (Monitor: Public Key (Content API))
-* `NETFLEX_PRIVATE_KEY` (Monitor: Master Private key (Content API))
-* `CPANEL_USERNAME` (Monitor: Web Username)
-* `CPANEL_PASSWORD` (Monitor: Web Password)
 
 ## VSCode extension
 

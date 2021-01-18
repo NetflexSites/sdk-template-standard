@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('body')
+@section('main')
   <div class="container">
     <example-component
       :title-text="'Yay! Your site is ready to be built!'"

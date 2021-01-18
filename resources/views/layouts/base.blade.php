@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <x-seo />
   <x-mix-head />
-  @yield('head')
+  @yield('headEnd')
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <x-blocks.navbar />
 
     <main class="main">
-      @yield('body')
+      @yield('main')
     </main>
 
     <x-blocks.footer />
@@ -21,7 +21,7 @@
 
   <x-mix-body />
 
-  @stack('documentEnd')
+  @stack('bodyEnd')
 
   <x-editor-tools />
 </body>
