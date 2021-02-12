@@ -10,7 +10,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
-        "apility/laravel-mix-components": "^2.1",
+        "apility/laravel-mix-components": "^2.2",
         "fideloper/proxy": "^4.0",
         "laravel/tinker": "^2.0",
         "netflex/customers": "^3.0",
