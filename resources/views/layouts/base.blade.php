@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <x-seo />
-  <x-mix-head preload integrity="sha512" />
+  <x-mix-head preload integrity="sha512" :crossorigin="current_mode() !== 'live' ? 'anonymous' : null" />
   @yield('headEnd')
 </head>
 <body>
@@ -19,7 +19,7 @@
     <x-blocks.footer />
   </div>
 
-  <x-mix-body integrity="sha512" />
+  <x-mix-body integrity="sha512" :crossorigin="current_mode() !== 'live' ? 'anonymous' : null" />
 
   @stack('bodyEnd')
 
