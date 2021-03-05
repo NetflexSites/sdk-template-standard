@@ -1,0 +1,31 @@
+.cover-editor-buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 15px auto 0;
+  
+    &--higher {
+      margin-top: -30px;
+    }
+  }
+  
+  .netflex-content-settings-btn {
+    background: #0079C4 !important;
+    font-size: 1rem !important;
+    padding: 0.25rem 0.75rem 0.25rem !important;
+    border-radius: 0.5rem !important;
+    border: 1px solid #fff !important;
+    margin-right: 0.5rem !important;
+  
+    &:hover {
+      color: #fff !important;
+      background: #005080 !important;
+      text-decoration: none !important;
+    }
+  
+    span {
+      padding-right: 5px;
+    }
+  }

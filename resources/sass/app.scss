@@ -5,5 +5,15 @@
 @import "navbar";
 @import "footer";
 
+@import "blocks";
+@import "buttons";
+@import "custom";
+@import "mixins";
+@import "swipebox";
+@import "teams";
+
+// Editor
+@import "editor";
+
 // Components
-@import "components/example-component";
+/* @import "components/example-component"; */

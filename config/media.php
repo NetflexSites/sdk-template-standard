@@ -1,5 +1,7 @@
 <?php
 
+use Netflex\Pages\Components\Picture;
+
 return [
 
     /*
@@ -37,6 +39,15 @@ return [
     |     - fill
     */
     'presets' => [
-        'default' => MEDIA_PRESET_ORIGINAL
+        'default' => MEDIA_PRESET_ORIGINAL,
+        'logoImage' => [
+            'size' => '150x50',
+            'mode' => Picture::MODE_PORTRAIT
+        ],
+        'bannerFullscreen' => [
+            'mode' => Picture::MODE_FIT,
+            'resolutions' => ['1x', '2x'],
+            'size' => '1600x1200',
+          ],
     ],
 ];
