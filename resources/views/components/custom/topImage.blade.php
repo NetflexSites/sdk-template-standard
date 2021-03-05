@@ -1,7 +1,7 @@
 <x-background-image
   area="image"
   preset="bannerFullscreen"
-  class='bg_'.uniqid()
+  class="bg_" {{-- 'bg_'.uniqid() --}}
 >
 
   <x-editor-button
