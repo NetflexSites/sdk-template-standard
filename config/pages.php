@@ -13,7 +13,7 @@ return [
     
     'controller' => Netflex\Pages\Controllers\PageController::class,
 
-    'prefix' => 'netflex',
+    'prefix' => '',
 
     'components' => [
         Netflex\Pages\Components\BackgroundImage::class,
