@@ -4,15 +4,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Netflex Credentials
+    | API connections
     |--------------------------------------------------------------------------
     |
-    | Your application's API credentials for communicating with the
+    | Your application's API connections for communicating with the
     | Netflex Content API.
     |
     */
 
-    'publicKey' => env('NETFLEX_PUBLIC_KEY'),
-    'privateKey' => env('NETFLEX_PRIVATE_KEY'),
+    'connections' => [
+        'default' => [
+            'publicKey' => env('NETFLEX_PUBLIC_KEY'),
+            'privateKey' => env('NETFLEX_PRIVATE_KEY'),
+        ],
+    ],
 
 ];
