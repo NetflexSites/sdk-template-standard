@@ -11,7 +11,7 @@ return [
     |
     */
     'breakpoints' => [
-        'xss' => 320,
+        'xxs' => 320,
         'xs' => 480,
         'sm' => 768,
         'md' => 992,
