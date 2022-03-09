@@ -175,6 +175,7 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Netflex\Cache\Providers\CacheServiceProvider::class,
 
         /*
          * Package Service Providers...
