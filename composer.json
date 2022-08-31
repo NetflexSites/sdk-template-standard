@@ -13,11 +13,11 @@
         "apility/laravel-mix-components": "^2.2",
         "fideloper/proxy": "^4.0",
         "laravel/tinker": "^2.0",
-        "netflex/framework": "^4.0"
+        "netflex/framework": "^4.0",
+        "facade/ignition": "^2.10"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.8",
-        "facade/ignition": "^2.10",
         "fzaninotto/faker": "^1.9",
         "mockery/mockery": "^1.4",
         "nunomaduro/collision": "^5.0",

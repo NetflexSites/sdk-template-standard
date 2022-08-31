@@ -47,6 +47,16 @@ return [
             'level' => 'debug',
         ],
 
+        'single+flare' => [
+            'driver' => 'stack',
+            'channels' => ['single', 'flare'],
+            'ignore_exceptions' => false,
+        ],
+
+        'flare' => [
+            'driver' => 'flare',
+        ],
+
         'daily' => [
             'driver' => 'daily',
             'path' => storage_path('logs/laravel.log'),
