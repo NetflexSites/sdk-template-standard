@@ -12,7 +12,7 @@ jobs:
 
   composer:
     docker:
-      - image: circleci/php:latest
+      - image: cimg/php:7.4
     steps:
       - netflex/composer
 
