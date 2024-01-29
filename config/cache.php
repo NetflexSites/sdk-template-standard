@@ -49,7 +49,7 @@ return [
 
         'file' => [
             'driver' => 'file',
-            'path' => storage_path('sdk/cache/data'),
+            'path' => storage_path('framework/cache/data'),
         ],
 
         'memcached' => [
